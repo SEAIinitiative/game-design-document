@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SEAI GDD Documentation</title>
+</head>
+<body>
+    <div id="top-header">
+        <h1>SEAI</h1>
+        <div class="nav-logo"><img src=""></div>
+
+    </div>
+        <!-- Navigation Bar -->
+        <header id="header">
+            <nav id="navbar">
+                <ul>
+                    <li><a class="nav-link" href="#Introduction">Introduction</a>
+                        <ul>
+                            <li><a class="nav-link" href="#Summary_Pitch">Summary / Pitch</a></li>
+                            <li><a class="nav-link" href="#Inspirations">Inspirations</a></li>
+                            <li><a class="nav-link" href="#Player_Experience">Player Experience</a></li>
+                            <li><a class="nav-link" href="#Platform">Platform</a></li>
+                            <li><a class="nav-link" href="#Software">Software</a></li>
+                            <li><a class="nav-link" href="#Genre">Genre</a></li>
+                            <li><a class="nav-link" href="#Target_Audience">Target Audience</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="#Concept">Concept</a>
+                        <ul>
+                            <li><a class="nav-link" href="#Core_Loop">Core Loop</a></li>
+                            <li><a class="nav-link" href="#Themes">Themes</a></li>
+                            <li><a class="nav-link" href="#Primary_Mechanics">Primary Mechanics</a></li>
+                            <li><a class="nav-link" href="#Secondary_Mechanics">Secondary Mechanics</a></li>
+                            <li><a class="nav-link" href="#Tertiary_Mechanics">Tertiary Mechanics</a></li>
+                            <li><a class="nav-link" href="#Combat">Combat</a></li>
+                            <li><a class="nav-link" href="#Puzzles">Puzzles</a></li>
+                            <li><a class="nav-link" href="#Quests">Quests</a></li>
+                            <li><a class="nav-link" href="#AI_NPCs">AI / NPCs</a></li>
+                            <li><a class="nav-link" href="#Special_Systems">Special Systems</a></li>
+                            <li><a class="nav-link" href="#Progression">Progression</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="#Story">Story</a>
+                        <ul>
+                            <li><a class="nav-link" href="#Narrative">Narrative</a></li>
+                            <li><a class="nav-link" href="#Characters">Characters</a></li>
+                            <li><a class="nav-link" href="#Dialogue">Dialogue</a></li>
+                            <li><a class="nav-link" href="#Storyboards">Storyboards</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="#Art">Art</a>
+                        <ul>
+                            <li><a class="nav-link" href="#Design">Design</a></li>
+                            <li><a class="nav-link" href="#Visual_Effects">Visual Effects</a></li>
+                            <li><a class="nav-link" href="#Lighting">Lighting</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="#Audio">Audio</a>
+                        <ul>
+                            <li><a class="nav-link" href="#Music">Music</a></li>
+                            <li><a class="nav-link" href="#Sound_Effects">Sound Effects</a></li>
+                            <li><a class="nav-link" href="#Voice_Acting">Voice Acting</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="#Game_Experience">Game Experience</a>
+                        <ul>
+                            <li><a class="nav-link" href="#UI_UX">UI / UX</a></li>
+                            <li><a class="nav-link" href="#Controls">Controls</a></li>
+                            <li><a class="nav-link" href="#Menus">Menus</a></li>
+                            <li><a class="nav-link" href="#Diegetics">Diegetics</a></li>
+                            <li><a class="nav-link" href="#Integration">Integration</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="#Integration_of_Education">Integration of Education</a>
+                        <ul>
+                            <li><a class="nav-link" href="#Learning_Objectives">Learning Objectives</a></li>
+                            <li><a class="nav-link" href="#Educational_Content_Delivery">Educational Content Delivery</a></li>
+                            <li><a class="nav-link" href="#Alignment_with_Gameplay">Alignment with Gameplay</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="#Integration_of_AI">Integration of AI</a>
+                        <ul>
+                            <li><a class="nav-link" href="#AI_Powered_NPCs">AI-Powered NPCs</a></li>
+                            <li><a class="nav-link" href="#Personalized_Learning">Personalized Learning</a></li>
+                            <li><a class="nav-link" href="#AI_in_Knowledge_Journal">AI in Knowledge Journal</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="#Integration_of_Blockchain">Integration of Blockchain</a>
+                        <ul>
+                            <li><a class="nav-link" href="#Token_Based_Reward_System">Token-Based Reward System</a></li>
+                            <li><a class="nav-link" href="#Credential_Verification">Credential Verification</a></li>
+                            <li><a class="nav-link" href="#Decentralized_Education_Platform">Decentralized Education Platform</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="#Market_Requirements">Market Requirements</a>
+                        <ul>
+                            <li><a class="nav-link" href="#Priorities">Priorities</a></li>
+                            <li><a class="nav-link" href="#Minimum_Viable_Product">Minimum Viable Product</a></li>
+                            <li><a class="nav-link" href="#Stretch_Goals">Stretch Goals</a></li>
+                            <li><a class="nav-link" href="#Delivery">Delivery</a></li>
+                            <li><a class="nav-link" href="#Marketing">Marketing</a></li>
+                            <li><a class="nav-link" href="#Post_Launch">Post-Launch</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="#Technical_Requirements">Technical Requirements</a>
+                        <ul>
+                            <li><a class="nav-link" href="#Systems">Systems</a></li>
+                            <li><a class="nav-link" href="#Work_Packages">Work Packages</a></li>
+                            <li><a class="nav-link" href="#Tasks">Tasks</a></li>
+                            <li><a class="nav-link" href="#Activities">Activities</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-doc">
+            <!-- 1. Introduction Section -->
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                
+                <!-- Summary / Pitch Subsection -->
+                <section class="sub-section" id="Summary_Pitch">
+                    <header>Summary / Pitch</header>
+                    <p>In a dystopian future where traditional education has collapsed, knowledge is controlled by a corrupt organization known as the Knowledge Syndicate. Players, as young heroes, discover an ancient AI system, SEAI, hidden in the ruins of an old library. SEAI holds the key to reviving true education. Guided by SEAI, players embark on a journey to restore knowledge, battling the corrupt Syndicate and uncovering lost wisdom along the way. The game seamlessly integrates educational content into its engaging gameplay, offering a unique blend of learning and adventure.</p>
+                </section>
+        
+                <!-- Inspirations Subsection -->
+                <section class="sub-section" id="Inspirations">
+                    <header>Inspirations</header>
+                    <ul>
+                        <li><strong>Early Pokémon Games:</strong> Featuring a 16-bit style and top-down exploration that evokes nostalgia and simplicity.</li>
+                        <li><strong>Educational RPGs:</strong> Combining role-playing elements with educational content to enhance learning.</li>
+                        <li><strong>Classic Adventure Games:</strong> Drawing from timeless adventure mechanics and story-driven gameplay.</li>
+                    </ul>
+                </section>
+        
+                <!-- Player Experience Subsection -->
+                <section class="sub-section" id="Player_Experience">
+                    <header>Player Experience</header>
+                    <p>Players will:</p>
+                    <ul>
+                        <li><strong>Explore:</strong> Traverse diverse regions of Eduvia, each with unique educational themes and challenges.</li>
+                        <li><strong>Solve Puzzles:</strong> Engage with subject-related puzzles that reinforce critical thinking and problem-solving skills.</li>
+                        <li><strong>Complete Quests:</strong> Undertake missions assigned by AI NPCs, each related to different educational subjects.</li>
+                        <li><strong>Knowledge-Based Duels:</strong> Engage in intellectual duels using knowledge acquired throughout the game.</li>
+                        <li><strong>Learn:</strong> Gain knowledge points to unlock new abilities and progress in the story.</li>
+                    </ul>
+                    <p>The aim is to create an immersive and educational experience that is both enjoyable and intellectually stimulating.</p>
+                </section>
+        
+                <!-- Platform Subsection -->
+                <section class="sub-section" id="Platform">
+                    <header>Platform</header>
+                    <ul>
+                        <li><strong>Primary:</strong> PC</li>
+                        <li><strong>Potential Expansion:</strong> Mobile and console platforms</li>
+                    </ul>
+                </section>
+        
+                <!-- Software Subsection -->
+                <section class="sub-section" id="Software">
+                    <header>Software</header>
+                    <p><strong>Game Engine:</strong> Godot Engine</p>
+                </section>
+        
+                <!-- Genre Subsection -->
+                <section class="sub-section" id="Genre">
+                    <header>Genre</header>
+                    <p><strong>Educational RPG:</strong> Blending role-playing elements with educational content.</p>
+                </section>
+        
+                <!-- Target Audience Subsection -->
+                <section class="sub-section" id="Target_Audience">
+                    <header>Target Audience</header>
+                    <ul>
+                        <li><strong>Students:</strong> Engaging them in an interactive learning experience.</li>
+                        <li><strong>Educators:</strong> Providing a tool to supplement traditional teaching methods.</li>
+                        <li><strong>Gamers:</strong> Those interested in educational content and storytelling.</li>
+                    </ul>
+                </section>
+            </section>
+
+
+            <!-- 2. Concept Section -->
+            <section class="main-section" id="Concept">
+                <header>Concept</header>
+
+                <!-- Core Loop Subsection -->
+                <section class="sub-section" id="Core_Loop">
+                    <header>Core Loop</header>
+                    <ol>
+                        <li><strong>Explore:</strong> Traverse diverse regions of Eduvia, each offering unique challenges and quests.</li>
+                        <li><strong>Solve Puzzles:</strong> Engage with educational puzzles to acquire knowledge.</li>
+                        <li><strong>Complete Quests:</strong> Finish quests to gain knowledge points and progress the story.</li>
+                        <li><strong>Record Knowledge:</strong> Use the Knowledge Journal to track and review acquired information.</li>
+                        <li><strong>Progress:</strong> Unlock new regions and abilities by utilizing accumulated knowledge.</li>
+                    </ol>
+                </section>
+
+                <!-- Themes Subsection -->
+                <section class="sub-section" id="Themes">
+                    <header>Themes</header>
+                    <ul>
+                        <li><strong>Knowledge vs. Ignorance:</strong> The struggle between enlightenment and control.</li>
+                        <li><strong>Discovery and Learning:</strong> The joy and power of uncovering new information.</li>
+                        <li><strong>Courage and Perseverance:</strong> The resilience needed to seek and defend knowledge.</li>
+                    </ul>
+                </section>
+
+                <!-- Primary Mechanics Subsection -->
+                <section class="sub-section" id="Primary_Mechanics">
+                    <header>Primary Mechanics</header>
+                    <ul>
+                        <li><strong>Exploration:</strong> Navigate through a 16-bit styled, top-down world filled with diverse environments.</li>
+                        <li><strong>Knowledge Acquisition:</strong> Collect knowledge points by completing educational tasks.</li>
+                        <li><strong>Puzzle Solving:</strong> Solve puzzles related to various subjects to advance in the game.</li>
+                    </ul>
+                </section>
+
+                <!-- Secondary Mechanics Subsection -->
+                <section class="sub-section" id="Secondary_Mechanics">
+                    <header>Secondary Mechanics</header>
+                    <ul>
+                        <li><strong>Inventory Management:</strong> Manage items, educational tools, and resources within a system inspired by Zelda BOTW.</li>
+                        <li><strong>Skill Trees:</strong> Unlock and enhance abilities through a structured progression system based on acquired knowledge.</li>
+                    </ul>
+                </section>
+
+                <!-- Tertiary Mechanics Subsection -->
+                <section class="sub-section" id="Tertiary_Mechanics">
+                    <header>Tertiary Mechanics</header>
+                    <ul>
+                        <li><strong>Mini-Games:</strong> Engage in educational mini-games that provide additional learning opportunities and rewards.</li>
+                        <li><strong>Crafting:</strong> Collect resources to craft educational tools and upgrade items that assist in quests.</li>
+                    </ul>
+                </section>
+
+                <!-- Combat Subsection -->
+                <section class="sub-section" id="Combat">
+                    <header>Combat</header>
+                    <p><strong>Knowledge Duels:</strong> Engage in intellectual battles using the knowledge gained from quests and puzzles. These duels test the player's understanding and application of learned concepts rather than traditional combat skills.</p>
+                </section>
+
+                <!-- Puzzles Subsection -->
+                <section class="sub-section" id="Puzzles">
+                    <header>Puzzles</header>
+                    <p><strong>Subject-Related Puzzles:</strong> Each puzzle is designed to teach and reinforce concepts from subjects such as math, science, history, and literature. Solving these puzzles provides knowledge points and other rewards.</p>
+                </section>
+
+                <!-- Quests Subsection -->
+                <section class="sub-section" id="Quests">
+                    <header>Quests</header>
+                    <ul>
+                        <li><strong>Story-Driven Quests:</strong> Follow the main storyline by completing quests given by NPCs, each relating to different educational topics and historical contexts.</li>
+                        <li><strong>Side Quests:</strong> Additional missions that offer deeper insights into specific subjects and provide extra rewards.</li>
+                    </ul>
+                </section>
+
+                <!-- AI / NPCs Subsection -->
+                <section class="sub-section" id="AI_NPCs">
+                    <header>AI / NPCs</header>
+                    <ul>
+                        <li><strong>Historical Figures:</strong> AI-driven characters modeled after historical figures and subject matter experts provide guidance, assign quests, and offer educational insights.</li>
+                        <li><strong>Mentors and Allies:</strong> Characters who assist the player throughout their journey, each with unique abilities and knowledge areas.</li>
+                    </ul>
+                </section>
+
+                <!-- Special Systems Subsection -->
+                <section class="sub-section" id="Special_Systems">
+                    <header>Special Systems</header>
+                    <ul>
+                        <li><strong>Token-Based Reward System:</strong> Earn tokens for completing quests and achieving milestones. These tokens can be used to unlock additional content, access premium features, and gain blockchain-based certificates.</li>
+                        <li><strong>Knowledge Journal:</strong> A Pokedex-like system that records all acquired knowledge. It serves as a reference guide and a note-taking tool, with AI assistance to help organize and review information.</li>
+                    </ul>
+                </section>
+
+                <!-- Progression Subsection -->
+                <section class="sub-section" id="Progression">
+                    <header>Progression</header>
+                    <ul>
+                        <li><strong>Skill Unlocks:</strong> Gain new skills and abilities by earning knowledge points and completing quests.</li>
+                        <li><strong>Region Unlocks:</strong> Access new areas of Eduvia as the player progresses in the story and gathers more knowledge.</li>
+                        <li><strong>Achievements and Rewards:</strong> Earn badges, points, and tokens for educational accomplishments, encouraging continuous learning and mastery.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 3. Story Section -->
+            <section class="main-section" id="Story">
+                <header>Story</header>
+        
+                <!-- Narrative Subsection -->
+                <section class="sub-section" id="Narrative">
+                    <header>Narrative</header>
+                    <p>In the world of Eduvia, knowledge is the key to power. As a young scholar, the player sets out to restore the balance of knowledge, disrupted by an unknown force. Guided by historical figures, the player uncovers ancient wisdom and faces challenges that test their understanding and courage.</p>
+                </section>
+        
+                <!-- Characters Subsection -->
+                <section class="sub-section" id="Characters">
+                    <header>Characters</header>
+                    <ul>
+                        <li><strong>Protagonist:</strong> A curious youth driven by the desire to learn and restore balance.</li>
+                        <li><strong>SEAI:</strong> An ancient AI mentor guiding the player with knowledge and wisdom.</li>
+                        <li><strong>Knowledge Syndicate Leaders:</strong> Antagonists who control and restrict access to education.</li>
+                        <li><strong>Mentor Figure:</strong> A former educator who guides the player through their journey.</li>
+                        <li><strong>Rival:</strong> A character initially aligned with the Syndicate who eventually joins the resistance.</li>
+                        <li><strong>Ally:</strong> Fellow resistance members representing different educational disciplines.</li>
+                    </ul>
+                </section>
+        
+                <!-- Dialogue Subsection -->
+                <section class="sub-section" id="Dialogue">
+                    <header>Dialogue</header>
+                    <p><strong>Sample Dialogue:</strong></p>
+                    <ul>
+                        <li><strong>Protagonist:</strong> "What is this place? It's unlike anything I've ever seen."</li>
+                        <li><strong>SEAI:</strong> "Welcome, young scholar. This is the Great Library, once a beacon of knowledge now lost to time. Together, we will restore its former glory."</li>
+                        <li><strong>Knowledge Syndicate Leader:</strong> "You dare defy the Syndicate? Knowledge is our domain, and you will never break our grasp."</li>
+                        <li><strong>Mentor Figure:</strong> "Remember, knowledge is your greatest weapon. Use it wisely and you will prevail."</li>
+                    </ul>
+                </section>
+        
+                <!-- Storyboards Subsection -->
+                <section class="sub-section" id="Storyboards">
+                    <header>Storyboards</header>
+                    <p><strong>Visual Storyboards:</strong></p>
+                    <ul>
+                        <li><strong>Discovery of SEAI:</strong> Protagonist finds the ancient AI in the ruins of the Great Library.</li>
+                        <li><strong>First Encounter with the Syndicate:</strong> Introduction to the antagonists as they attempt to seize the newly discovered knowledge.</li>
+                        <li><strong>Allies Assemble:</strong> Key moments where the protagonist meets and recruits allies from various educational disciplines.</li>
+                        <li><strong>Infiltrating the Syndicate:</strong> Detailed scenes of strategic planning and execution of missions to recover lost knowledge.</li>
+                        <li><strong>Climactic Battle:</strong> The final showdown with the Syndicate leader.</li>
+                    </ul>
+                </section>
+        
+                <!-- Detailed Storyline Subsection -->
+                <section class="sub-section" id="Detailed_Storyline">
+                    <header>Detailed Storyline</header>
+                    <p>In the dystopian future, traditional education has collapsed, and knowledge is controlled by the Knowledge Syndicate. Players, as young heroes, discover an ancient AI system, SEAI, hidden in the ruins of an old library. SEAI guides the players in their quest to restore true education by battling the corrupt Syndicate and recovering lost knowledge.</p>
+                    <p><strong>Key Events:</strong></p>
+                    <ol>
+                        <li><strong>Introduction:</strong>
+                            <ul>
+                                <li>The player character discovers SEAI in the ruins of a great library.</li>
+                                <li>Introduction to SEAI and its purpose.</li>
+                                <li>Initial encounter with the Knowledge Syndicate.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Early Challenges:</strong>
+                            <ul>
+                                <li>Gathering basic educational materials.</li>
+                                <li>Meeting key allies and forming a resistance group.</li>
+                                <li>Learning fundamental educational concepts through interactive missions.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Rising Action:</strong>
+                            <ul>
+                                <li>Undertaking quests to recover lost pieces of knowledge across different regions.</li>
+                                <li>Solving complex puzzles and completing missions.</li>
+                                <li>NPC interactions providing historical context and educational insights.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Climax:</strong>
+                            <ul>
+                                <li>Final push to infiltrate the Syndicate’s headquarters.</li>
+                                <li>Major battles and puzzle-solving sequences.</li>
+                                <li>Showdown with the Syndicate’s leader, incorporating moral and ethical decision-making.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Resolution:</strong>
+                            <ul>
+                                <li>Restoring the decentralized education system with SEAI's guidance.</li>
+                                <li>Establishing an inclusive learning environment for future generations.</li>
+                            </ul>
+                        </li>
+                    </ol>
+        
+                    <p><strong>Character Arcs:</strong></p>
+                    <ul>
+                        <li><strong>Player Character:</strong>
+                            <ul>
+                                <li>Growth from an ignorant individual to an educated leader.</li>
+                                <li>Development of critical thinking, problem-solving, and ethical reasoning skills.</li>
+                                <li>Building relationships with NPCs and learning from their experiences.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Key NPCs:</strong>
+                            <ul>
+                                <li><strong>Mentor Figure:</strong> A former educator who guides the player through their journey.</li>
+                                <li><strong>Rival:</strong> A character initially aligned with the Syndicate who eventually joins the resistance.</li>
+                                <li><strong>Ally:</strong> Fellow resistance members representing different educational disciplines.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+        
+                <!-- World-Building Subsection -->
+                <section class="sub-section" id="World_Building">
+                    <header>World-Building</header>
+                    <p><strong>Key Locations:</strong></p>
+                    <ul>
+                        <li><strong>Starting Village:</strong> A small, technologically advanced community hidden from the Syndicate. Introduction to basic game mechanics and initial educational missions.</li>
+                        <li><strong>Library Ruins:</strong> Ancient ruins representing lost knowledge. Puzzles and challenges related to historical and literary knowledge.</li>
+                        <li><strong>Tech City:</strong> A metropolis controlled by the Syndicate. Missions focused on STEM education with high-tech puzzles and challenges.</li>
+                        <li><strong>Forest of Myths:</strong> A mystical forest rich with cultural and historical lore. Missions and puzzles related to humanities and social sciences.</li>
+                        <li><strong>Mountain of Wisdom:</strong> A secluded mountain range housing hidden educational archives. Advanced challenges requiring critical thinking and problem-solving.</li>
+                    </ul>
+        
+                    <p><strong>Cultures and Lore:</strong></p>
+                    <ul>
+                        <li><strong>Historical Background:</strong>
+                            <ul>
+                                <li>Eduvia was once a place of thriving knowledge under SEAI’s guidance.</li>
+                                <li>The rise of the Syndicate led to the hoarding of knowledge and collapse of traditional education.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Cultural Elements:</strong>
+                            <ul>
+                                <li>Diverse regions each with unique histories, traditions, and educational philosophies.</li>
+                                <li>NPCs from different cultures offer perspectives on learning and knowledge.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Lore:</strong>
+                            <ul>
+                                <li>Legends of ancient scholars who guided the world.</li>
+                                <li>Myths and stories providing clues and inspiration for puzzles and missions.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <!--4 Art Section -->
+            <section class="main-section" id="Art">
+                <header>Art</header>
+        
+                <!-- Design Subsection -->
+                <section class="sub-section" id="Design">
+                    <header>Design</header>
+        
+                    <!-- Regions Sub-Subsection -->
+                    <section class="sub-sub-section" id="Regions">
+                        <header>Regions</header>
+                        <p>The visual design of the game's regions will reflect the diverse educational themes and environments in Eduvia. Each region will have its own unique aesthetic to visually communicate the subject matter and cultural background it represents.</p>
+                        <ul>
+                            <li><strong>Starting Village:</strong> A serene, technologically advanced community with vibrant colors, lush greenery, and modern architecture.</li>
+                            <li><strong>Library Ruins:</strong> Ancient, majestic ruins with overgrown foliage, intricate carvings, and remnants of a once-great civilization.</li>
+                            <li><strong>Tech City:</strong> A bustling metropolis with sleek, futuristic buildings, neon lights, and high-tech devices scattered around.</li>
+                            <li><strong>Forest of Myths:</strong> A mystical forest with towering trees, sparkling streams, and magical creatures. The palette includes deep greens, earthy browns, and ethereal glows.</li>
+                            <li><strong>Mountain of Wisdom:</strong> Majestic mountains with snow-capped peaks, ancient temples, and hidden caves. The design will include rugged terrain and serene, meditative spots.</li>
+                        </ul>
+                    </section>
+        
+                    <!-- Characters Sub-Subsection -->
+                    <section class="sub-sub-section" id="Characters">
+                        <header>Characters</header>
+                        <p>Character design will maintain a consistent 16-bit style, creating a nostalgic yet fresh visual experience.</p>
+                        <ul>
+                            <li><strong>Protagonist:</strong> A young, adventurous scholar with a customizable appearance, allowing players to personalize their character.</li>
+                            <li><strong>SEAI:</strong> A holographic entity with a sleek, futuristic design, appearing as a floating orb or an ethereal figure that changes colors when conveying different types of knowledge.</li>
+                            <li><strong>Knowledge Syndicate Leaders:</strong> Distinctive, imposing figures with dark, elaborate costumes that reflect their control over knowledge.</li>
+                            <li><strong>Mentor Figure:</strong> An elderly, wise character with gentle features and traditional scholarly attire.</li>
+                            <li><strong>Rival:</strong> A dynamic, conflicted character with a more rugged appearance, transitioning from antagonist to ally.</li>
+                            <li><strong>Allies:</strong> Diverse characters representing various educational disciplines, each with unique outfits and accessories that signify their expertise.</li>
+                        </ul>
+                    </section>
+                </section>
+        
+                <!-- Visual Effects Subsection -->
+                <section class="sub-section" id="Visual_Effects">
+                    <header>Visual Effects</header>
+                    <p>Visual effects will enhance the immersive experience of the game, making knowledge acquisition and puzzle-solving visually rewarding.</p>
+                    <ul>
+                        <li><strong>Knowledge Acquisition:</strong> Bright, glowing orbs or streams of light flowing into the player’s character, accompanied by sparkles and a soft glow.</li>
+                        <li><strong>Puzzle Solving:</strong> Dynamic effects such as gears turning, light beams connecting, or magical runes lighting up when puzzles are completed.</li>
+                        <li><strong>Duels:</strong> Flashy, animated effects for knowledge-based attacks, including energy blasts, elemental animations (fire, ice, electricity), and intricate spellcasting visuals.</li>
+                    </ul>
+                </section>
+        
+                <!-- Lighting Subsection -->
+                <section class="sub-section" id="Lighting">
+                    <header>Lighting</header>
+                    <p>Dynamic lighting will play a crucial role in creating an immersive and atmospheric game world.</p>
+                    <ul>
+                        <li><strong>Ambient Lighting:</strong> Soft, natural lighting to create a relaxing and inviting atmosphere in safe zones like the Starting Village.</li>
+                        <li><strong>Directional Lighting:</strong> Emphasizing the time of day and weather conditions in each region to add realism and depth to the environment.</li>
+                        <li><strong>Interactive Lighting:</strong> Lighting that responds to player actions, such as torches lighting up dark areas, mystical glows revealing hidden paths, and spotlights highlighting important objects.</li>
+                        <li><strong>Special Effects Lighting:</strong> Dramatic lighting changes during significant events, such as the discovery of SEAI, confrontations with the Knowledge Syndicate, and moments of critical knowledge acquisition.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 5. Audio Section -->
+            <section class="main-section" id="Audio">
+                <header>Audio</header>
+        
+                <!-- Music Subsection -->
+                <section class="sub-section" id="Music">
+                    <header>Music</header>
+                    <p>Our music will be designed to enhance the immersive and educational experience of SEAI, drawing inspiration from the tranquil and enchanting soundtracks of Minecraft and the Legend of Zelda series.</p>
+                    <ul>
+                        <li><strong>Thematic Scores:</strong> Each region will feature its own unique musical theme that reflects its educational subject and atmosphere.
+                            <ul>
+                                <li><strong>Starting Village:</strong> Calming, melodic tunes with gentle instrumentals to create a welcoming and serene environment.</li>
+                                <li><strong>Library Ruins:</strong> Hauntingly beautiful music with a mix of orchestral and ambient sounds to evoke a sense of mystery and ancient wisdom.</li>
+                                <li><strong>Tech City:</strong> Futuristic, electronic beats blended with orchestral elements to convey a bustling, high-tech atmosphere.</li>
+                                <li><strong>Forest of Myths:</strong> Ethereal and mystical melodies using woodwind and string instruments to immerse players in the magical, cultural lore of the forest.</li>
+                                <li><strong>Mountain of Wisdom:</strong> Majestic, uplifting compositions with deep, resonant tones to underscore the grandeur and tranquility of the mountains.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+        
+                <!-- Sound Effects Subsection -->
+                <section class="sub-section" id="Sound_Effects">
+                    <header>Sound Effects</header>
+                    <p>Sound effects will be crafted to enhance interactions, knowledge acquisition, and puzzle-solving, contributing to the overall immersive experience.</p>
+                    <ul>
+                        <li><strong>Interactions:</strong> Crisp and clear sounds for player interactions with objects, opening doors, and using items.
+                            <ul>
+                                <li><strong>Example:</strong> Soft chimes when picking up items, subtle clicks for menu navigation, and ambient sounds for environmental interactions.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Knowledge Acquisition:</strong> Bright, satisfying sounds that signal the acquisition of knowledge and completion of tasks.
+                            <ul>
+                                <li><strong>Example:</strong> Sparkling chimes and ascending tones that accompany the absorption of knowledge or the unlocking of new abilities.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Puzzle Solving:</strong> Rewarding audio cues that confirm the successful completion of puzzles and challenges.
+                            <ul>
+                                <li><strong>Example:</strong> Harmonious tones that play when a puzzle piece is placed correctly or a puzzle is solved, adding to the feeling of accomplishment.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+        
+                <!-- Voice Acting Subsection -->
+                <section class="sub-section" id="Voice_Acting">
+                    <header>Voice Acting</header>
+                    <p>Voice acting will be used to bring key characters and moments to life, adding depth and personality to the narrative.</p>
+                    <ul>
+                        <li><strong>Narration:</strong> Key story elements will be narrated by SEAI and other main characters to provide context and enhance storytelling.
+                            <ul>
+                                <li><strong>Example:</strong> SEAI’s voice guiding the player through the introduction and critical junctures, with a calm and authoritative tone.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Dialogues:</strong> Important dialogues between the protagonist, NPCs, and antagonists will be voiced to enhance character interactions and emotional engagement.
+                            <ul>
+                                <li><strong>Example:</strong> Dynamic conversations with historical figures, intense exchanges with the Knowledge Syndicate leaders, and motivational speeches from allies.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 6. Game Experience Section -->
+            <section class="main-section" id="Game_Experience">
+                <header>Game Experience</header>
+        
+                <!-- UI / UX Subsection -->
+                <section class="sub-section" id="UI_UX">
+                    <header>UI / UX</header>
+                    <p>The user interface (UI) and user experience (UX) design of SEAI are critical to ensuring players can easily navigate the game and access its educational content. Inspired by the clean and intuitive designs of games like Zelda: Breath of the Wild, our goal is to create a seamless and engaging experience.</p>
+                    <ul>
+                        <li><strong>Intuitive and Accessible Interface:</strong> The UI will be designed to be user-friendly, with clear icons, readable text, and straightforward navigation.
+                            <ul>
+                                <li><strong>Inventory Screen:</strong> A visually organized grid system for managing items, similar to Zelda: BotW, allowing players to easily sort, select, and use items.</li>
+                                <li><strong>Quest Log:</strong> A dedicated section for tracking active and completed quests, with detailed descriptions and objectives.</li>
+                                <li><strong>Knowledge Points Display:</strong> A clear indicator of earned knowledge points and their allocation.</li>
+                                <li><strong>Knowledge Acquisition System:</strong> Similar to the Pokédex, this system will record acquired knowledge and serve as a note-taking tool with AI assistance.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+        
+                <!-- Controls Subsection -->
+                <section class="sub-section" id="Controls">
+                    <header>Controls</header>
+                    <p>The control scheme will be designed to be simple and responsive, ensuring that players can effortlessly interact with the game world. Controls will be adapted for different platforms, including PC, mobile, and console.</p>
+                    <ul>
+                        <li><strong>Exploration:</strong> Smooth and fluid movement controls for navigating the top-down world.
+                            <ul>
+                                <li><strong>PC:</strong> Arrow keys/WASD for movement, mouse for interaction.</li>
+                                <li><strong>Mobile:</strong> Touch controls for movement and interactions.</li>
+                                <li><strong>Console:</strong> Analog stick for movement, buttons for actions.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Interactions:</strong> Easy-to-use controls for interacting with NPCs, objects, and environments.
+                            <ul>
+                                <li><strong>PC:</strong> E key or left mouse button for interactions.</li>
+                                <li><strong>Mobile:</strong> Tap for interactions.</li>
+                                <li><strong>Console:</strong> A button for interactions.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+        
+                <!-- Menus Subsection -->
+                <section class="sub-section" id="Menus">
+                    <header>Menus</header>
+                    <p>The menu system will be designed for clarity and ease of use, enabling players to quickly access and manage game settings, inventory, and quests.</p>
+                    <ul>
+                        <li><strong>Main Menu:</strong> Provides access to game settings, save/load options, and exit game.</li>
+                        <li><strong>Inventory Menu:</strong> Organized into categories such as items, equipment, and knowledge artifacts.</li>
+                        <li><strong>Quest Menu:</strong> Lists active, completed, and available quests with detailed information.</li>
+                        <li><strong>Settings Menu:</strong> Options for adjusting audio, video, controls, and other preferences.</li>
+                        <li><strong>Knowledge Acquisition System Menu:</strong> Allows players to review acquired knowledge, access notes, and utilize AI for enhanced learning.</li>
+                    </ul>
+                </section>
+        
+                <!-- Diegetics Subsection -->
+                <section class="sub-section" id="Diegetics">
+                    <header>Diegetics</header>
+                    <p>In-game elements will be designed to enhance immersion and storytelling, creating a cohesive and engaging experience.</p>
+                    <ul>
+                        <li><strong>Visual Cues:</strong> Subtle visual elements that guide players without breaking immersion (e.g., glowing objects, highlighted paths).</li>
+                        <li><strong>Interactive Elements:</strong> Environmental storytelling through objects, notes, and visual clues that provide background information and context.</li>
+                        <li><strong>Seamless Transitions:</strong> Smooth transitions between gameplay, dialogue, and cutscenes to maintain immersion.</li>
+                    </ul>
+                </section>
+        
+                <!-- Integration Subsection -->
+                <section class="sub-section" id="Integration">
+                    <header>Integration</header>
+                    <p>Educational content will be seamlessly integrated into the gameplay mechanics, ensuring that learning is a natural part of the player’s experience.</p>
+                    <ul>
+                        <li><strong>Educational Quests:</strong> Quests that teach specific concepts through interactive missions and challenges.</li>
+                        <li><strong>Knowledge-Based Challenges:</strong> Puzzles and tasks that require players to apply what they have learned.</li>
+                        <li><strong>NPC Interactions:</strong> Conversations with historical figures and subject matter experts that provide educational insights and context.</li>
+                        <li><strong>Knowledge Acquisition System:</strong> A dynamic tool for recording and reviewing learned information, similar to the Pokédex, which includes AI-assisted note-taking to enhance learning retention and application.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 7. Integration of Education Section -->
+            <section class="main-section" id="Integration_of_Education">
+                <header>Integration of Education</header>
+        
+                <!-- Learning Objectives Subsection -->
+                <section class="sub-section" id="Learning_Objectives">
+                    <header>Learning Objectives</header>
+                    <ul>
+                        <li><strong>Core Subjects:</strong> Math, Science, History, and Literature.</li>
+                        <li><strong>Skills Development:</strong> Critical thinking, problem-solving, strategic planning, and ethical reasoning.</li>
+                    </ul>
+                </section>
+        
+                <!-- Educational Content Delivery Subsection -->
+                <section class="sub-section" id="Educational_Content_Delivery">
+                    <header>Educational Content Delivery</header>
+                    <ul>
+                        <li><strong>Interactive Puzzles:</strong> Design puzzles that teach specific educational concepts.</li>
+                        <li><strong>Quests and Missions:</strong> Align quests with educational topics, ensuring that completing a quest imparts relevant knowledge.</li>
+                        <li><strong>NPC Interactions:</strong> Use dialogues with historical figures and subject matter experts to provide educational insights and context.</li>
+                    </ul>
+                </section>
+        
+                <!-- Alignment with Gameplay Subsection -->
+                <section class="sub-section" id="Alignment_with_Gameplay">
+                    <header>Alignment with Gameplay</header>
+                    <ul>
+                        <li><strong>Seamless Integration:</strong> Educational content is woven into the storyline and gameplay, ensuring it feels like a natural part of the game.</li>
+                        <li><strong>Progressive Learning:</strong> The difficulty and complexity of educational content scale with the player's progression in the game.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 8. Integration of AI Section -->
+            <section class="main-section" id="Integration_of_AI">
+                <header>Integration of AI</header>
+        
+                <!-- AI-Powered NPCs Subsection -->
+                <section class="sub-section" id="AI-Powered_NPCs">
+                    <header>AI-Powered NPCs</header>
+                    <ul>
+                        <li><strong>Historical Figures:</strong> Develop AI-driven NPCs modeled after real historical figures who guide and mentor the player.</li>
+                        <li><strong>Adaptive Learning:</strong> Implement AI that adjusts the educational content based on the player's performance and learning style.</li>
+                    </ul>
+                </section>
+        
+                <!-- Personalized Learning Subsection -->
+                <section class="sub-section" id="Personalized_Learning">
+                    <header>Personalized Learning</header>
+                    <ul>
+                        <li><strong>AI Customization:</strong> Use AI to tailor educational experiences to individual player needs, preferences, and progress.</li>
+                        <li><strong>Real-Time Feedback:</strong> Provide immediate, personalized feedback through AI to help players understand and improve.</li>
+                    </ul>
+                </section>
+        
+                <!-- AI in Knowledge Journal Subsection -->
+                <section class="sub-section" id="AI_in_Knowledge_Journal">
+                    <header>AI in Knowledge Journal</header>
+                    <ul>
+                        <li><strong>AI Assistance:</strong> Use AI to help players organize, retrieve, and review information recorded in the Knowledge Journal.</li>
+                        <li><strong>Enhanced Note-Taking:</strong> AI aids in summarizing and highlighting key points, making the Knowledge Journal a powerful learning tool.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 9. Integration of Blockchain Section -->
+            <section class="main-section" id="Integration_of_Blockchain">
+                <header>Integration of Blockchain</header>
+
+                <!-- Token-Based Reward System Subsection -->
+                <section class="sub-section" id="Token-Based_Reward_System">
+                    <header>Token-Based Reward System</header>
+                    <ul>
+                        <li><strong>Educational Tokens:</strong> Implement a blockchain-based token system to reward players for educational achievements.</li>
+                        <li><strong>Usage of Tokens:</strong> Allow tokens to be used for unlocking additional content, accessing premium features, and obtaining blockchain-based certificates.</li>
+                    </ul>
+                </section>
+
+                <!-- Credential Verification Subsection -->
+                <section class="sub-section" id="Credential_Verification">
+                    <header>Credential Verification</header>
+                    <ul>
+                        <li><strong>Blockchain Certificates:</strong> Use blockchain to issue and verify educational credentials, ensuring their authenticity and portability.</li>
+                        <li><strong>Security and Transparency:</strong> Leverage blockchain's inherent security and transparency to build trust in the educational achievements recognized by the game.</li>
+                    </ul>
+                </section>
+
+                <!-- Decentralized Education Platform Subsection -->
+                <section class="sub-section" id="Decentralized_Education_Platform">
+                    <header>Decentralized Education Platform</header>
+                    <ul>
+                        <li><strong>Access and Equity:</strong> Ensure that blockchain technology supports the goal of making high-quality education accessible to all, regardless of geographical or economic barriers.</li>
+                        <li><strong>Smart Contracts:</strong> Use smart contracts to automate and enforce educational agreements, such as enrollment in courses and issuance of certificates.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 10. Market Requirements Section -->
+            <section class="main-section" id="Market_Requirements">
+                <header>Market Requirements</header>
+
+                <!-- Priorities Subsection -->
+                <section class="sub-section" id="Priorities">
+                    <header>Priorities</header>
+                    <ul>
+                        <li><strong>Engaging and Educational Gameplay:</strong> The primary focus is on creating an immersive and educational experience that seamlessly integrates learning into the gameplay.</li>
+                        <li><strong>High-Quality Art and Audio Design:</strong> Ensuring the game has a visually appealing 16-bit style and a captivating soundtrack inspired by games like Minecraft and Zelda: Breath of the Wild.</li>
+                        <li><strong>Robust and Scalable Technical Infrastructure:</strong> Developing a scalable platform that can handle growth and provide a stable, smooth gaming experience across different devices.</li>
+                    </ul>
+                </section>
+
+                <!-- Minimum Viable Product (MVP) Subsection -->
+                <section class="sub-section" id="Minimum_Viable_Product">
+                    <header>Minimum Viable Product (MVP)</header>
+                    <ul>
+                        <li><strong>Core Gameplay Mechanics and Main Storyline:</strong> Essential mechanics such as exploration, quests, knowledge acquisition, and the main narrative arc.</li>
+                        <li><strong>Basic Educational Content and Quests:</strong> Initial set of educational quests and content that align with the core subjects and learning objectives.</li>
+                    </ul>
+                </section>
+
+                <!-- Stretch Goals Subsection -->
+                <section class="sub-section" id="Stretch_Goals">
+                    <header>Stretch Goals</header>
+                    <ul>
+                        <li><strong>Expanded Regions and Quests:</strong> Additional regions within Eduvia, each with unique quests and educational content to explore.</li>
+                        <li><strong>Additional Educational Content and Mini-Games:</strong> Enriching the educational experience with more content and interactive mini-games that reinforce learning objectives.</li>
+                    </ul>
+                </section>
+
+                <!-- Delivery Subsection -->
+                <section class="sub-section" id="Delivery">
+                    <header>Delivery</header>
+                    <ul>
+                        <li><strong>Digital Distribution:</strong> Utilizing popular platforms like Steam and Epic Games Store for distributing the game to a wide audience.</li>
+                        <li><strong>Accessibility:</strong> Ensuring the game is accessible on multiple platforms, including PC, mobile, and consoles.</li>
+                    </ul>
+                </section>
+
+                <!-- Marketing Subsection -->
+                <section class="sub-section" id="Marketing">
+                    <header>Marketing</header>
+                    <ul>
+                        <li><strong>Social Media Campaigns:</strong> Engaging with potential players through targeted social media campaigns to build awareness and anticipation.</li>
+                        <li><strong>Educational Outreach:</strong> Partnering with schools, educational institutions, and educational influencers to promote the game as a valuable learning tool.</li>
+                        <li><strong>Community Engagement:</strong> Building a strong community around SEAI through forums, social media groups, and interactive events.</li>
+                    </ul>
+                </section>
+
+                <!-- Post-Launch Subsection -->
+                <section class="sub-section" id="Post-Launch">
+                    <header>Post-Launch</header>
+                    <ul>
+                        <li><strong>Regular Updates with New Content and Features:</strong> Continuously improving the game with regular updates that introduce new quests, regions, and features based on player feedback and educational trends.</li>
+                        <li><strong>Community Engagement and Feedback Integration:</strong> Actively involving the community in the development process by integrating their feedback into future updates and expansions.</li>
+                        <li><strong>Events and Challenges:</strong> Hosting in-game events and challenges to keep the player base engaged and motivated.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 11. Technical Requirements Section -->
+            <section class="main-section" id="Technical_Requirements">
+                <header>Technical Requirements</header>
+
+                <!-- Systems Subsection -->
+                <section class="sub-section" id="Systems">
+                    <header>Systems</header>
+                    <ul>
+                        <li><strong>Godot Engine:</strong> The primary game engine used for developing SEAI, chosen for its versatility and ease of use in 2D game development.</li>
+                        <li><strong>GDScript for Scripting:</strong> A Python-like language used within Godot for scripting game logic, ensuring efficient and manageable code.</li>
+                        <li><strong>Middleware for Audio and Visual Enhancements:</strong> Tools and libraries used to enhance the game's audio and visual elements, ensuring high-quality production values.</li>
+                    </ul>
+                </section>
+
+                <!-- Work Packages Subsection -->
+                <section class="sub-section" id="Work_Packages">
+                    <header>Work Packages</header>
+                    <ul>
+                        <li><strong>Concept and Pre-production</strong>
+                            <ul>
+                                <li>Initial concept development and documentation.</li>
+                                <li>Creating detailed storylines and world-building elements.</li>
+                                <li>Defining core gameplay mechanics and educational integration.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Prototype Development</strong>
+                            <ul>
+                                <li>Building a basic playable version with core mechanics.</li>
+                                <li>Initial art and audio asset creation.</li>
+                                <li>Implementing early-stage educational content and quests.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Full Development</strong>
+                            <ul>
+                                <li>Expanding the game world and adding more regions and quests.</li>
+                                <li>Refining gameplay mechanics and adding secondary and tertiary systems.</li>
+                                <li>Completing art, audio, and UI/UX design.</li>
+                                <li>Full integration of educational content.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Testing and Refinement</strong>
+                            <ul>
+                                <li>Conducting thorough playtesting to identify and fix bugs.</li>
+                                <li>Refining gameplay based on feedback.</li>
+                                <li>Ensuring educational content aligns with learning objectives.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Launch Preparation</strong>
+                            <ul>
+                                <li>Finalizing all game elements and performing final quality assurance checks.</li>
+                                <li>Preparing marketing materials and distribution plans.</li>
+                                <li>Setting up digital distribution channels and ensuring smooth launch logistics.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Tasks Subsection -->
+                <section class="sub-section" id="Tasks">
+                    <header>Tasks</header>
+                    <ul>
+                        <li><strong>Story and World-Building:</strong> Crafting a rich narrative and detailed game world, including character development and lore.</li>
+                        <li><strong>Art and Audio Design:</strong> Creating visual and audio assets that align with the 16-bit aesthetic and enhance the game's immersive experience.</li>
+                        <li><strong>UI/UX Development:</strong> Designing an intuitive and accessible user interface, ensuring smooth player interactions and navigation.</li>
+                        <li><strong>Educational Content Integration:</strong> Embedding educational objectives within the gameplay, ensuring learning is a natural and engaging part of the experience.</li>
+                        <li><strong>Technical Implementation and Testing:</strong> Coding game mechanics, implementing assets, and rigorously testing for bugs and performance issues.</li>
+                    </ul>
+                </section>
+
+                <!-- Activities Subsection -->
+                <section class="sub-section" id="Activities">
+                    <header>Activities</header>
+                    <ul>
+                        <li><strong>Team Meetings and Milestones:</strong> Regularly scheduled meetings to review progress, address challenges, and plan upcoming tasks. Setting and tracking milestones to ensure the project stays on schedule.</li>
+                        <li><strong>Playtesting and Feedback Sessions:</strong> Conducting internal and external playtesting sessions to gather feedback and make necessary adjustments to gameplay and educational content.</li>
+                        <li><strong>Continuous Integration and Deployment:</strong> Utilizing version control and continuous integration tools to manage code changes, ensure stability, and facilitate smooth development cycles.</li>
+                    </ul>
+                </section>
+            </section>
+        </main>        
+</body>
+</html>
