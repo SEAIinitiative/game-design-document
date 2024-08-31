@@ -4,7 +4,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif; /* Apply the Roboto font */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
 }
 
@@ -33,7 +33,7 @@ html {
     position: fixed;
     top: 5%;
     left: 0;
-    width: 200px;
+    width: 250px;
     height: 100%;
     background-color: white;
     color: gray;
@@ -67,7 +67,7 @@ html {
 #navbar a::before {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 10px; /* Adjust this value to control the starting position of the dotted line */
     right: 10px; /* Adjust this value to control the ending position of the dotted line */
     height: 1px;
@@ -80,27 +80,49 @@ html {
     );
 }
 
-#navbar a.nav-link {
+/* Style for main links */
+.nav-link.main-link {
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    padding: 5px;
     text-decoration: none;
-    color: #000;
-    padding: 9px 12px 0px 12px;
-    
+    color: #333;
 }
 
-#navbar a.sub-link {
-    margin-left: 15px; /* Indent sub-links */
-    font-size: 0.8em;  /* Slightly smaller font size for sub-links */
+/* Style for sub-links */
+.nav-link.sub-link {
+    display: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #555;
+}
+
+#navbar .sub-section {
+    display: none;
+    padding-left: 15px; /* Indent for visual hierarchy */
 }
 
 #main-doc {
-    margin-left: 220px;
-    padding: 20px;
-    padding-top: 10%;
+    margin-left: 250px;
+    padding: 30px;
+    padding-top: 9%;
 }
 
-.main-section header {
+#main-doc .main-section header {
     font-size: 1.5rem;
     font-weight: bold;
     padding-top: 15%; /* Adjust this value based on your header height */
     margin-top: -15%; /* Adjust this value based on your header height */
+}
+
+/* Main section header styling for the first header in each .main-section */
+.main-section header:first-of-type {
+    
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-bottom: 2px solid #ccc;
 }
